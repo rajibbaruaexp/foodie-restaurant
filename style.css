@@ -12,8 +12,14 @@ body {
 /* hero area css starts here */
 .common-double-area {
   min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -47,6 +53,7 @@ body {
 a.button-style {
   display: inline-block;
   text-decoration: none;
+  background: -webkit-linear-gradient(45deg, #ddd, #fe4a2e);
   background: linear-gradient(45deg, #ddd, #fe4a2e);
   color: #fff;
   padding: 10px 24px;
@@ -55,13 +62,16 @@ a.button-style {
   text-transform: uppercase;
   margin-top: 20px;
   font-weight: 700;
+  -webkit-transition: 0.3s !important;
   transition: 0.3s !important;
 }
-
-a.button-style a:hover {
-  background: linear-gradient(45deg, #fe4a2e, black);
+a.button-style:hover {
+  background: -webkit-linear-gradient(45deg, #fe4a2e, #ddd);
+  background: linear-gradient(45deg, #fe4a2e, #ddd);
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+
 /* about us css starts here  */
 .about-us-area {
   background-image: url(images/about-us-bg.jpg);
@@ -80,6 +90,7 @@ a.button-style a:hover {
   height: 100%;
   z-index: -1;
   opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 .about-us-bg img {
   position: absolute;
@@ -120,14 +131,26 @@ a.button-style a:hover {
 }
 
 .our-recipes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .recipe-img img {
   width: 92%;
   border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.single-recipes:hover .recipe-img img {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
 }
 
 .single-recipes {
@@ -138,8 +161,12 @@ a.button-style a:hover {
   padding-top: 15px;
   margin: 0 15px;
   min-height: 425px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
-
+.single-recipes:hover {
+  box-shadow: 0 0 10px 0px #fc773f;
+}
 .recipe-meta-data {
   text-align: left;
   padding: 12px;
@@ -156,8 +183,13 @@ a.button-style a:hover {
   box-shadow: 0 0 12px 0 #ddd;
   padding: 15px;
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   padding: 50px 20px;
   text-align: center;
@@ -165,10 +197,21 @@ a.button-style a:hover {
 .single-counter-up span {
   color: #fc773f;
 }
+.single-counter-up:hover h1 {
+  letter-spacing: 10px;
+}
 
+.single-counter-up h1 {
+  -webkit-transition: 0.3s !important;
+  transition: 0.3s !important;
+}
 /* contact us css */
 .contact-us-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -202,6 +245,7 @@ a.button-style a:hover {
   border-radius: 5px;
   border: 1px solid #ddd;
   padding: 5px;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -220,6 +264,7 @@ a.button-style a:hover {
   color: #fff;
   font-weight: 700;
   cursor: pointer;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
