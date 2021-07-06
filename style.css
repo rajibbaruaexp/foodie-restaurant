@@ -5,7 +5,10 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-
+.width1075 {
+  width: 1075px;
+  margin: 0 auto;
+}
 /* hero area css starts here */
 .common-double-area {
   min-height: 500px;
@@ -15,7 +18,7 @@ body {
 }
 
 .common-double-area div {
-  width: 40%;
+  width: 50%;
 }
 .hero-area {
   padding: 50px 0;
@@ -123,12 +126,12 @@ a.button-style a:hover {
 }
 
 .recipe-img img {
-  width: 310px;
+  width: 92%;
   border-radius: 10px;
 }
 
 .single-recipes {
-  width: 25%;
+  width: 33%;
   text-align: center;
   box-shadow: 0 0 10px 5px #ddd;
   border-radius: 10px;
@@ -144,4 +147,131 @@ a.button-style a:hover {
 }
 .recipe-meta-data h2 {
   margin-bottom: 10px;
+}
+
+/* counter up area css  */
+.counterup-wrapper {
+  width: 1020px;
+  margin: 0 auto;
+  box-shadow: 0 0 12px 0 #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 20px;
+  text-align: center;
+}
+.single-counter-up span {
+  color: #fc773f;
+}
+
+/* contact us css */
+.contact-us-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.contact-us-area {
+  background: aliceblue;
+  padding: 100px 0;
+  margin-top: 70px;
+}
+
+.contact-us-title {
+  padding: 50px;
+}
+
+.contact-us-title p {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.contact-us-form {
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 0 #ddd;
+  width: 430px;
+}
+
+.contact-us-form input {
+  width: 97%;
+  height: 40px;
+  margin-bottom: 13px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.contact-us-form textarea {
+  width: 99%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.contact-us-form input[type="submit"] {
+  width: 100%;
+  text-transform: uppercase;
+  background: #fc773f;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-us-form input[type="submit"]:hover {
+  background: #333;
+}
+
+.contact-us-form input:hover,
+.contact-us-form textarea:hover {
+  border-color: #f8753e;
+}
+.location-area iframe {
+  height: 270px;
+  width: 100%;
+}
+
+.location-area h1 {
+  text-align: center;
+}
+
+.location-area {
+  padding-top: 20px;
+}
+.location-title {
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  padding: 28px 0;
+}
+
+.location-title p {
+  font-size: 14px;
+}
+
+/* footer css */
+footer {
+  background: #0b0e17;
+  color: #fff;
+  text-align: center;
+  padding: 70px 0;
+}
+
+footer h1 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+footer p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+footer h1 span {
+  color: #fc773f;
 }
