@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-area {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.common-double-area div {
+  width: 40%;
+}
+
+.hero-title h1 {
+  font-size: 50px;
+}
+
+.hero-title h3 {
+  font-style: italic;
+}
+
+.hero-title p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.hero-title span {
+  color: #FC773F;
+  text-shadow: 5px 5px 6px black;
+}
+.hero-img img {
+  width: 500px;
+}
+
+.hero-title a {
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(45deg, #ddd, #FE4A2E);
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 5px;
+    box-shadow: 0 0px 3px 0px #333;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: 700;
+    transition: .3s !important;
+}
+
+.hero-title a:hover {
+    background: linear-gradient(45deg, #FE4A2E, black);
+    transition: .3s;
+}
